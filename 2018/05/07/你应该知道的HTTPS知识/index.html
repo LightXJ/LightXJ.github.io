@@ -8,17 +8,38 @@
   <link rel="dns-prefetch" href="https://lightxj.github.io">
   <title>你应该知道的HTTPS知识 | LightXJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.为什么会有https？ HTTP有以下缺点:1、通信使用明文（不加密），内容可能被窃听;2、不验证通信方的身份，因此可能遭遇伪装;3、无法验证报文的完整性，所以可能已经遭到篡改 建立一个信息安全通道，来保证数据传输的安全 确认网站的真实性，防止钓鱼网站  2.https是什么？HTTP+ 加密 + 认证 + 完整性保护 =HTTPS（HTTP Secure）防止被窃听的对策中，最普及的就是加密">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+  <meta name="description" content="1.为什么会有https？ HTTP有以下缺点:1、通信使用明文（不加密），内容可能被窃听;2、不验证通信方的身份，因此可能遭遇伪装;3、无法验证报文的完整性，所以可能已经遭到篡改 建立一个信息安全通道，来保证数据传输的安全 确认网站的真实性，防止钓鱼网站  2.https是什么？HTTP+ 加密 + 认证 + 完整性保护 &#x3D;HTTPS（HTTP Secure）防止被窃听的对策中，最普及的就是加密">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你应该知道的HTTPS知识">
-<meta property="og:url" content="https://lightxj.github.io/2018/05/07/你应该知道的HTTPS知识/index.html">
+<meta property="og:url" content="https://lightxj.github.io/2018/05/07/%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84HTTPS%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="LightXJ的博客">
-<meta property="og:description" content="1.为什么会有https？ HTTP有以下缺点:1、通信使用明文（不加密），内容可能被窃听;2、不验证通信方的身份，因此可能遭遇伪装;3、无法验证报文的完整性，所以可能已经遭到篡改 建立一个信息安全通道，来保证数据传输的安全 确认网站的真实性，防止钓鱼网站  2.https是什么？HTTP+ 加密 + 认证 + 完整性保护 =HTTPS（HTTP Secure）防止被窃听的对策中，最普及的就是加密">
-<meta property="og:updated_time" content="2018-05-07T10:01:30.000Z">
+<meta property="og:description" content="1.为什么会有https？ HTTP有以下缺点:1、通信使用明文（不加密），内容可能被窃听;2、不验证通信方的身份，因此可能遭遇伪装;3、无法验证报文的完整性，所以可能已经遭到篡改 建立一个信息安全通道，来保证数据传输的安全 确认网站的真实性，防止钓鱼网站  2.https是什么？HTTP+ 加密 + 认证 + 完整性保护 &#x3D;HTTPS（HTTP Secure）防止被窃听的对策中，最普及的就是加密">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-05-07T09:42:18.000Z">
+<meta property="article:modified_time" content="2018-05-07T10:01:30.000Z">
+<meta property="article:author" content="LightXJ">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="jquery">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="html5">
+<meta property="article:tag" content="开发者">
+<meta property="article:tag" content="程序猿">
+<meta property="article:tag" content="程序媛">
+<meta property="article:tag" content="极客">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="代码">
+<meta property="article:tag" content="开源">
+<meta property="article:tag" content="IT网站">
+<meta property="article:tag" content="Developer">
+<meta property="article:tag" content="Programmer">
+<meta property="article:tag" content="Coder">
+<meta property="article:tag" content="Geek">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="css3">
+<meta property="article:tag" content="用户体验">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你应该知道的HTTPS知识">
-<meta name="twitter:description" content="1.为什么会有https？ HTTP有以下缺点:1、通信使用明文（不加密），内容可能被窃听;2、不验证通信方的身份，因此可能遭遇伪装;3、无法验证报文的完整性，所以可能已经遭到篡改 建立一个信息安全通道，来保证数据传输的安全 确认网站的真实性，防止钓鱼网站  2.https是什么？HTTP+ 加密 + 认证 + 完整性保护 =HTTPS（HTTP Secure）防止被窃听的对策中，最普及的就是加密">
   
     <link rel="alternative" href="/atom.xml" title="LightXJ的博客" type="application/atom+xml">
   
@@ -36,7 +57,7 @@
 
   
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -47,13 +68,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="/img/timg.jpeg" class="js-avatar">
+			<img src="/img/lufei.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">LightXJ</a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">风清海阔，春暖花开</p>
 		
 
 		<nav class="header-menu">
@@ -75,13 +94,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="github" target="_blank" href="https://github.com/LightXJ" title="github"><i class="icon-github"></i></a>
 		        
 			</div>
 		</nav>
@@ -99,13 +112,11 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/timg.jpeg" class="js-avatar">
+				<img src="/img/lufei.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">LightXJ</h1>
 			</hgroup>
-			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>风清海阔，春暖花开<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -116,13 +127,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="github" target="_blank" href="https://github.com/LightXJ" title="github"><i class="icon-github"></i></a>
 			        
 				</div>
 			</nav>
@@ -158,7 +163,7 @@
   
 
         
-        <a href="/2018/05/07/你应该知道的HTTPS知识/" class="archive-article-date">
+        <a href="/2018/05/07/%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84HTTPS%E7%9F%A5%E8%AF%86/" class="archive-article-date">
   	<time datetime="2018-05-07T09:42:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-07</time>
 </a>
         
@@ -251,7 +256,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://lightxj.github.io/2018/05/07/你应该知道的HTTPS知识/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://lightxj.github.io/2018/05/07/%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84HTTPS%E7%9F%A5%E8%AF%86/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -264,6 +269,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/04/20/curl/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          curl
+        
+      </div>
+    </a>
   
   
     <a href="/2018/02/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -310,7 +324,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 LightXJ
+    		&copy; 2020 LightXJ
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
